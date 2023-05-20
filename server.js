@@ -18,7 +18,6 @@ mongoose
 
 app.use('/api', classifiedsRoutes);
 
-
 app.listen(port, () => {
      console.log(`Server running on port ${port}`);
 });
