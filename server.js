@@ -1,10 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const classifiedsRoutes = require('./routes/classRoute');
-
+const cors = require("cors");
 const app = express();
 const port = 3000;
-
+app.use(cors());
 app.use(express.json());
 
 mongoose
